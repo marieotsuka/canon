@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Now</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<div class="scene">
+    <div id="ocean2" class="fadeIn">
+    </div>
+
+    <div id="ocean">
+    </div>
+     <div id="leaf" class="fadeIn">
+    </div>
+    <div id="leaf2" class="fadeIn">
+    </div>
+    <div id="nature" class="fadeIn">
+    </div>
+    <div id="city" class="fadeIn">
+    </div>
+
+    <div id="building" class="fadeIn">
+    </div>
+    <div id="traffic" class="fadeIn">
+    </div>
+<!--     <div id="cars" class="fadeIn">
+    </div> -->
+
+    <div id="birds">
+        <img src="gifs/birds.gif" id="flipv" class="fadeIn" style="top: 50px; left: 200px;">
+        <img src="gifs/birds.gif" id="fliph" class="fadeIn" style="top: 400px; left: -140px;">
+        <img src="gifs/birds.gif" id="flipvh" class="fadeIn" style="top: 400px; left: 540px;">
+        <img src="gifs/birds.gif" id="bottom" style="top: 750px; left: 200px;" class="fadeIn">
+    </div>
+
+    <div id="flood" class="fadeIn">
+    </div>
+
+    <div id="fire" class="fadeIn">
+    </div>
+
+    <div id="trash" class="fadeIn">
+    </div>
+
+    <div id="timber" class="fadeIn">
+    </div>
+
+    <div id="amazon" class="fadeIn">
+    </div>
+
+    <div id="float" class="fadeIn">
+         <img src="gifs/float.gif">
+    </div>
+
+</div>
+
+
+<a href="http://climate.nasa.gov/evidence/" target="_blank"><div id="time">
+
+</div></a>
+
+
+<script>
+(function () {
+    function checkTime(i) {
+        return (i < 10) ? "0" + i : i;
+    }
+
+    function startTime() {
+        var today = new Date(),
+            h = checkTime(today.getHours()),
+            m = checkTime(today.getMinutes()),
+            s = checkTime(today.getSeconds());
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout(function () {
+            startTime()
+        }, 500);
+    }
+    startTime();
+})();
+</script>
+<audio loop autoplay type="audio/mpeg">
+    <source src="canonD_crop.mp3" />
+</audio>
+</body>
+</html>
+

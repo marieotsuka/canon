@@ -1,0 +1,267 @@
+
+body {
+	margin: 0;
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	animation: darken ease-in 1;
+	animation-fill-mode: forwards;
+	animation-duration: 126s;
+}
+
+.text{
+	color: white;
+	display: none;
+	text-align: center;
+}
+
+.text:hover{
+	cursor: pointer;
+}
+
+#time {
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	position: absolute;
+	z-index: 1000;
+	color: white;
+	font-size: 5em;
+	font-weight: bold;
+}
+
+.scene {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+}
+
+.scene div{
+	position: absolute;
+}
+
+
+#ocean {
+	width: 100vw;
+	background: url(gifs/underwater.gif) repeat;
+	z-index: 0;
+	bottom: 0;
+	animation: expand ease-in 1; 
+	animation-fill-mode:forwards;
+	animation-duration: 106s;
+	animation-delay: 42s;
+	mix-blend-mode: multiply;
+	z-index: 100;
+}	
+
+#ocean2{
+	width: 100vw;
+	background: url(gifs/ocean.gif) repeat;
+	z-index: 1;
+	bottom: 0;
+	height: 280px;
+	opacity: 1;
+}
+
+
+
+#leaf{
+	width: 50vw;
+	height: 30vh;
+	background: url(gifs/leaf.gif) top right no-repeat;
+	top: 40%;
+	right: 0;
+	animation-delay: 13s;
+	z-index: 2;
+}
+
+#leaf2{
+	width: 50vw;
+	height: 30vh;
+	background: url(gifs/leaf2.gif) no-repeat;
+	left: 0;
+	top: 40%;
+	animation-delay: 13s;
+	z-index: 2;
+}
+
+#nature{
+	width: 100vw;
+	height: 50vh;
+	background: url(gifs/nature.gif) top center repeat;
+	z-index: 1;
+	top: 0;
+	animation-delay: 27s;
+}
+
+#city {
+	width: 100vw;
+	height: 30vh;
+	background: url(gifs/city.gif) repeat;
+	z-index: 3;
+	animation-delay: 41s;
+}
+
+#traffic{
+	top: 30%;
+	width: 100vw;
+	height: 200px;
+	background: url(gifs/traffic.gif) repeat;
+	z-index: 4;
+	mix-blend-mode: screen;
+	animation-delay: 53s;
+}
+
+/*#cars{
+	bottom: 0;
+	width: 100vw;
+	height: 250px;
+	background: url(gifs/cars.gif) repeat;
+	z-index: 5;
+	animation-delay: 58s;
+}*/
+
+
+#building{
+	width: 20vw;
+	height: 100vh;
+	background: url(gifs/building.gif) repeat;
+	background-size: 80px auto;
+	z-index: 6;
+	right: 0;
+	animation-delay: 65s;
+}
+
+
+#float{
+	bottom: 0;
+	left: 50%;
+	z-index: 50;
+	margin-left: -380px;
+	animation-delay: 130s;
+}
+
+
+/*#birds-building{
+	top: 30%;
+	left: 50%;
+	z-index: 5;
+	mix-blend-mode: darken;
+	animation-delay: 68s;
+}
+*/
+#birds{
+	margin: auto;
+	z-index: 44;
+	mix-blend-mode: darken;
+}
+
+#birds img{
+	width: 450px;
+	position: absolute;
+}
+
+#flipv{
+	transform: rotate(180deg);
+	animation-delay: 67s;
+}
+
+#fliph{
+	transform: rotate(90deg);
+	animation-delay: 68s;
+}
+
+#flipvh{
+	transform: rotate(-90deg);
+	animation-delay: 69s;
+}
+
+#bottom{
+	animation-delay: 70s;
+}
+
+
+#lamp {
+	height: 100vh;
+	width: 200px;
+	background: url(gifs/lamp.gif) no-repeat;
+	z-index: 7;
+	right: 0;
+	animation-delay: 72s;
+}
+
+#flood {
+	width: 100vw;
+	background: url(gifs/flood.gif) repeat;
+	z-index: 4;
+	bottom: 28%;
+	height: 280px;
+	animation-delay: 74s;
+	mix-blend-mode: screen;
+}
+
+#fire{
+	width: 100vw;
+	background: url(gifs/fire.gif) repeat;
+	z-index: 5;
+	bottom: 10%;
+	height: 230px;
+	animation-delay: 78s;
+}
+
+#trash{
+	width: 500px;
+	background: url(gifs/trash2.gif) repeat;
+	z-index: 8;
+	height: 100vh;
+	animation-delay: 94s;
+	mix-blend-mode: multiply;
+}
+
+
+#timber{
+	width: 100vw;
+	background: url(gifs/timber.gif) repeat;
+	z-index: 9;
+	bottom: 50%;
+	height: 280px;
+	animation-delay: 113s;
+	mix-blend-mode: multiply;
+}
+
+
+
+#amazon{
+	width: 100vw;
+	background: url(gifs/amazon.gif) repeat;
+	z-index: 15;
+	top: 0;
+	height: 280px;
+	animation-delay: 118s;
+	mix-blend-mode: lighten;
+}
+
+
+.fadeIn{
+	opacity: 0;
+	animation:fadeIn ease-in 1 forwards 1s; 
+}
+
+@keyframes fadeIn{
+	from { opacity:0; } to { opacity:1; }
+}
+
+@keyframes expand{
+	from { height: 0vh; } to { height:100vh; }
+}
+
+@keyframes darken{
+	from { background: #fff; } to { background: #000;}
+}
+
+
+@keyframes slide{
+	from { transform: translateX(0);} to {transform: translateX(100vw);}
+}
+
+
